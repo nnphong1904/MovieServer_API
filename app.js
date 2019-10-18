@@ -25,7 +25,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/api', indexApiRouter);
 app.use('/',function(req,res,next){
-  res.json({title:process.env.MONGO_URL});
+  res.render("WELCOM TO THE API WORLD !!!!");
 })
 
 
