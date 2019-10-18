@@ -7,6 +7,7 @@ var logger = require('morgan');
 
 var indexApiRouter = require('./routes/index.api');
 var mongoose = require('mongoose');
+console.log(process.env.MONGO_URL);
 mongoose.connect(process.env.MONGO_URL,{useNewUrlParser: true});
 
 var app = express();
