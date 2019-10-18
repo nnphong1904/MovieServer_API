@@ -1,3 +1,4 @@
+require('dotenv').config();
 var createError = require('http-errors');
 var express = require('express');
 var path = require('path');
@@ -6,9 +7,10 @@ var logger = require('morgan');
 
 var indexApiRouter = require('./routes/index.api');
 var mongoose = require('mongoose');
-mongoose.connect('mongodb+srv://admin:BiakhtnApcs1904@moviedb-9572p.mongodb.net/MovieDB?retryWrites=true&w=majority',{useNewUrlParser: true},{ useUnifiedTopology: true });
+mongoose.connect('mongodb+srv://admin:BiakhtnApcs1904@moviedb-9572p.mongodb.net/MovieDB?retryWrites=true&w=majority',{useNewUrlParser: true});
 
 var app = express();
+
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
