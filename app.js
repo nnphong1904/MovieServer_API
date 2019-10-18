@@ -7,7 +7,7 @@ var logger = require('morgan');
 
 var indexApiRouter = require('./routes/index.api');
 var mongoose = require('mongoose');
-mongoose.connect('mongodb+srv://admin:BiakhtnApcs1904@moviedb-9572p.mongodb.net/MovieDB?retryWrites=true&w=majority',{useNewUrlParser: true});
+mongoose.connect(process.env.MONGO_URL,{useNewUrlParser: true});
 
 var app = express();
 
