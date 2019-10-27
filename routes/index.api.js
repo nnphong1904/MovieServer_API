@@ -5,5 +5,5 @@ const  LogInControllers = require('../controllers/login.controller');
 
 /* GET home page. */
 router.get('/movies', MovieControllers.fetchDataFromDB);
-// router.get('/login',LogInControllers.logIn);
+router.get('/login',LogInControllers.logIn);
 module.exports = router;
