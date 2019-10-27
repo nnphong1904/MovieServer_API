@@ -1,5 +1,4 @@
-module.exports.logIn=function(req, res, next){
-        console.log("HELLO");
-        res.redirect('/');    
-  
+
+module.exports.postlogIn=function(req, res, next){   
+    res.send('this is post login ');
 }
