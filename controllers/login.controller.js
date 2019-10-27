@@ -1,4 +1,4 @@
 
 module.exports.postlogIn=function(req, res, next){   
-    res.send('this is post login ');
+    res.redirect('http://localhost:3001/movies');
 }
