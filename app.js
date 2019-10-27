@@ -26,7 +26,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/api', indexApiRouter);
 app.use('/',function(req,res,next){
-  res.json({message:"WELCOM TO THE API WORLD !!!!"});
+  res.json({message:"HELLO WORLD !!!!"});
 })
 
 
