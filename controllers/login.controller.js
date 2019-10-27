@@ -1,4 +1,4 @@
-module.exports.logIn=async function(req, res, next){
+module.exports.logIn=function(req, res, next){
         res.json({message:'login API'});    
   
 }
